@@ -1,14 +1,11 @@
 pipeline {
-    agent { label 'master' }
+    agent any
     stages {
         stage('build') {
             steps {
-                javac hello.java
+                bat "rmdir  /s /q SampleProject"
+                bat "git clone https://github.com/AmeyDevarshi/SampleProject.git"
             }    
     }
-        stage('build next'){
-            steps {
-                javac reply.java
-            }
-        }
+        
 }
