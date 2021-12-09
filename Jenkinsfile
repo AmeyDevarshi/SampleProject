@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat "git clone https://github.com/AmeyDevarshi/SampleProject.git"
+                sh "echo "Hello""
             }    
     }
         
