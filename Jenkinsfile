@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello"
+                sh 'mvn hello'
             }    
     }
         stage('build1') {
