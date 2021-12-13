@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 pwsh 'javac "hello.java"'   
+                 sh 'javac "hello.java"'   
             }    
         }
     }
