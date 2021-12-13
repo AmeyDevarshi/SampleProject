@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    tools{
+        maven 'Maven'
+    }
     stages {
         stage('build') {
             steps {
-                sh 'javac hello.java'
+                echo "Hello"
             }    
     }
         
