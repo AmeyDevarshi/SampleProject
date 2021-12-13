@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 javac "hello.java"   
+                 cmd 'javac "hello.java"'   
             }    
         }
     }
