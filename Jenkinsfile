@@ -7,7 +7,11 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello"
-                java --version
+            }    
+    }
+        stage('build1') {
+            steps {
+                echo "World"
             }    
     }
         
