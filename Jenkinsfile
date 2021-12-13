@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 powershell 'javac "first_pipeline11\\hello.java"'   
+                 pwsh 'javac "first_pipeline11\\hello.java"'   
             }    
         }
     }
