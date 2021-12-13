@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello"
-                sh " java --version"
+                java --version
             }    
     }
         
