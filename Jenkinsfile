@@ -11,7 +11,7 @@ pipeline {
     }
         stage('build1') {
             steps {
-                python hello.py
+                javac hello.java
             }    
     }
         
