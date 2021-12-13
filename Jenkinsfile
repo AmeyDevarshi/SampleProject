@@ -8,12 +8,13 @@ pipeline {
             steps {
                 echo "Hello"
             }    
-    }
+        }
         stage('build1') {
             steps {
-                javac "first_pipeline11\\hello.java"
+                script {
+                    javac "first_pipeline11\\hello.java"
+                }
             }    
+        }
     }
-        
-}
 }
