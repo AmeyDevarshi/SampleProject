@@ -7,6 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello"
+                sh " mvn SampleProject"
             }    
     }
         
