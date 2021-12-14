@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 echo "World !" 
+                 cmd 'javac first_pipeline11\\hello.java'
             }    
         }
     }
