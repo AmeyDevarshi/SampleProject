@@ -11,7 +11,16 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 bat 'javac first_pipeline11\\hello.java'
+                 bat (
+                    label: 'JAVAC Tests',
+                    script: """
+                        java -version
+                        javac -version
+                        dir
+                        javac hello.java
+                        if errorlevel 1 exit /b 1
+                    """
+                    )
             }    
         }
     }
