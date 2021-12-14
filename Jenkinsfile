@@ -12,7 +12,7 @@ pipeline {
         stage('build1') {
             steps {
                  bat (
-                    label: 'JAVAC Tests',
+                    //label: 'JAVAC Tests',
                     script: """
                         java -version
                         javac -version
