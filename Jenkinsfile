@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 bat 'javac first_pipeline11\\hello.java'
+                 ba 'javac first_pipeline11\\hello.java'
             }    
         }
     }
