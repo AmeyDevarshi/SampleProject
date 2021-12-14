@@ -18,9 +18,9 @@ pipeline {
 //                         javac -version
 //                         dir
 //                         javac hello.java
-                           C:\windows\system32\cmd.exe /k " java -version "
-		                   C:\windows\system32\cmd.exe /k " javac -version "
-                           C:\windows\system32\cmd.exe /k " javac hello.java"
+                           C:\\windows\\system32\\cmd.exe /k " java -version "
+		           C:\\windows\\system32\\cmd.exe /k " javac -version "
+                           C:\\windows\\system32\\cmd.exe /k " javac hello.java"
                            if errorlevel 1 exit /b 1
                     """
                     )
