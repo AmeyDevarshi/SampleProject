@@ -11,8 +11,10 @@ pipeline {
         }
         stage('build1') {
             steps {
-                git 'https://github.com/AmeyDevarshi/SampleProject.git'
-                bat "mvn -Dmaven.test.failure.ignore=true clean package" 
+                dir("C:\ProgramData\Jenkins\.jenkins\workspace\first_pipeline11"){
+                bat "java -version"
+                }
+                 
                     //label: 'JAVAC Tests',
 //                     script: """
 //                            java -version
