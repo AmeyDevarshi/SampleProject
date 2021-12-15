@@ -10,7 +10,7 @@
             }    
         }
         stage('build1') {
-            steps { label: 'JAVAC Tests',
+            steps { 
                 dir("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\first_pipeline11"){
                 javac hello.java
                 }
