@@ -12,7 +12,7 @@
         stage('build1') {
             steps { 
                 dir("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\first_pipeline11"){
-                command "javac hello.java"
+                batchFile('java -version')
                 }
                  
                     //label: 'JAVAC Tests',
