@@ -11,7 +11,8 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 bat ( build first_job1 )
+                git 'https://github.com/AmeyDevarshi/SampleProject.git'
+                bat "mvn -Dmaven.test.failure.ignore=true clean package" 
                     //label: 'JAVAC Tests',
 //                     script: """
 //                            java -version
