@@ -12,7 +12,7 @@
         stage('build1') {
             steps { 
                 dir("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\first_pipeline11"){
-                sh "javac hello.java"
+                cygwin "javac hello.java"
                 }
                  
                     //label: 'JAVAC Tests',
