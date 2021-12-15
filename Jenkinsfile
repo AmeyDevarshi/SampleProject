@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                 bat ( build first_job1
+                 bat ( build first_job1 )
                     //label: 'JAVAC Tests',
 //                     script: """
 //                            java -version
@@ -23,7 +23,7 @@ pipeline {
 // //                            C:\\windows\\system32\\cmd.exe /k " javac hello.java"
 //                            if errorlevel 1 exit /b 1
 //                     """
-                    )
+                    //)
             }    
         }
     }
