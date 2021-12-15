@@ -11,9 +11,8 @@
         }
         stage('build1') {
             steps { 
-                dir("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\first_pipeline11"){
                 batchFile('javac hello.java')
-                }
+                
                  
                     //label: 'JAVAC Tests',
 //                     script: """
