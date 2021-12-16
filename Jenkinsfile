@@ -12,6 +12,7 @@
         stage('build1') {
             steps { 
                 batchFile('javac hello.java')
+                batchFile('javac reply.java')
                 
                  
                     //label: 'JAVAC Tests',
