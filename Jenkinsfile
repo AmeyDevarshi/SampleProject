@@ -1,12 +1,15 @@
  pipeline {
     agent any
+    environment {
+        PATH = "C:\Program Files\apache-maven-3.8.4\bin:$PATH" 
+    }
     tools{
         maven 'Maven'
     }
     stages {
         stage('build') {
             steps {
-                maven clean install 
+                mvn clean install 
             }    
         }
         stage('build1') {
