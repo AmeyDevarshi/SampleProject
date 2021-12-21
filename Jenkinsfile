@@ -6,7 +6,7 @@
     stages {
         stage('build') {
             steps {
-                mvn clean install 
+                maven clean install 
             }    
         }
         stage('build1') {
