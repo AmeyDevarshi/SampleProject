@@ -9,7 +9,7 @@
     stages {
         stage('build') {
             steps {
-                mvn clean install 
+                batchFile('mvn clean install') 
             }    
         }
         stage('build1') {
