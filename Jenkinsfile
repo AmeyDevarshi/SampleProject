@@ -6,7 +6,7 @@
     stages {
         stage('build') {
             steps {
-                echo "Hello!"
+                mvn clean install 
             }    
         }
         stage('build1') {
